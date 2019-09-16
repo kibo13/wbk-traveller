@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Traveller - Туристическое агенство</title>
+
+    <!-- START favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/icons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/icons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- END favicon -->
+
+    <!-- START fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- END fontawesome -->
+
+    <!-- START custom styles -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- END custom styles -->
+  </head>
+
+  <body>
+
+    <div id="preloader" class="preloader">
+      <div class="preloader__box">
+          <div class="dot-01"></div>
+          <div class="dot-02"></div>
+          <div class="dot-03"></div>
+          <div class="dot-04"></div>
+          <div class="dot-05"></div>
+      </div>
+    </div>
+    <!-- /.preloader -->
+
+    <header id="home" class="header">
+      <nav id="navbar" class="navbar">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center m-0">
+            <!-- navbar-menu-left -->
+            <div class="col-lg-5 col-12 p-0 navbar-menu">
+              <a href="#home" class="navbar-menu__link" data-number="01."
+                >Главная</a
+              >
+              <a href="#features" class="navbar-menu__link" data-number="02."
+                >О нас</a
+              >
+              <a href="#team" class="navbar-menu__link" data-number="03."
+                >Команда</a
+              >
+              <a href="#tour" class="navbar-menu__link" data-number="04."
+                >Страны</a
+              >
+            </div>
+
+            <!-- navbar-menu-logotype -->
+            <div class="col-lg-2 p-0 navbar-logo">
+              <a href="#" class="navbar-logo__link">Traveller</a>
+            </div>
+
+            <!-- navbar-menu-right -->
+            <div class="col-lg-5 col-12 p-0 navbar-menu">
+              <a href="#countries" class="navbar-menu__link" data-number="05."
+                >Туры</a
+              >
+              <a href="#client" class="navbar-menu__link" data-number="06."
+                >Клиенты</a
+              >
+              <a href="#blog" class="navbar-menu__link" data-number="07."
+                >Идеи</a
+              >
+              <a href="#contact" class="navbar-menu__link" data-number="08."
+                >Контакты</a
+              >
+            </div>
+
+            <!-- navbar-burger -->
+            <div id="burger-btn" class="navbar-burger">
+              <div id="burger-icon" class="navbar-burger__icon"></div>
+            </div>
+
+            <!-- navbar-social -->
+            <ul class="col-12 navbar-social">
+              <li class="navbar-social__item">
+                <a
+                  href="https://web.facebook.com/"
+                  target="_blank"
+                  class="navbar-social__link"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  class="navbar-social__link"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="navbar-social__link"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  class="navbar-social__link"
+                >
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+              <li class="navbar-social__item">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  class="navbar-social__link"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+
+      <section class="intro">
+        <ul class="intro-slider">
+          <li class="intro-slider__item intro-slider__item--fade">
+            <img
+              src="img/intro/intro-01.jpg"
+              alt=""
+              class="intro-slider__img"
+            />
+          </li>
+
+          <li class="intro-slider__item intro-slider__item--fade">
+            <img
+              src="img/intro/intro-02.jpg"
+              alt=""
+              class="intro-slider__img"
+            />
+          </li>
+
+          <li class="intro-slider__item intro-slider__item--fade">
+            <img
+              src="img/intro/intro-03.jpg"
+              alt=""
+              class="intro-slider__img"
+            />
+          </li>
+        </ul>
+        <!-- /.intro-slider -->
+
+        <div class="container p-0">
+          <div class="row d-flex justify-content-center align-items-center m-0">
+            <div class="col-md-11 col-sm-12 d-flex flex-column intro-info">
+              <h1 class="intro-info__title">Добро пожаловать</h1>
+              <p class="intro-info__text">
+                Международный туризм, организация групповых и индивидуальных
+                поездок, туров по всему миру, экскурсионные и горнолыжные туры,
+                пляжный отдых...
+              </p>
+              <a href="#" class="intro-info__btn intro-info__btn--pulse"
+                >Подробнее</a
+              >
+              <ul class="intro-info__group">
+                <li class="intro-info__dot" onclick="currentSlide(1)"></li>
+                <li class="intro-info__dot" onclick="currentSlide(2)"></li>
+                <li class="intro-info__dot" onclick="currentSlide(3)"></li>
+              </ul>
+            </div>
+            <ul
+              class="col-md-1 col-sm-12 d-flex flex-column align-items-center intro-social"
+            >
+              <li class="intro-social__item">
+                <a href="#" class="intro-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="intro-social__item">
+                <a href="#" class="intro-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="intro-social__item">
+                <a href="#" class="intro-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="intro-social__item">
+                <a href="#" class="intro-social__link">
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+              <li class="intro-social__item">
+                <a href="#" class="intro-social__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.intro -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+      <section id="features" class="features">
+        <div class="container">
+          <div class="banner">
+            <h2 class="banner__title">О компании</h2>
+          </div>
+          <ul class="row d-flex features-slider m-0">
+            <li class="col-lg-4 features-slider__item">
+              <i class="fab fa-fly features-slider__icon"></i>
+              <h3 class="features-slider__title">море приключений</h3>
+              <p class="features-slider__text">
+                Воплощаем в жизнь мечты о долгожданных путешествиях. Вас ждут
+                туры более 100 стран на 5 континентах.
+              </p>
+            </li>
+            <li class="col-lg-4 features-slider__item">
+              <i class="fas fa-trophy features-slider__icon"></i>
+              <h3 class="features-slider__title">лидеры на рынке</h3>
+              <p class="features-slider__text">
+                Сотрудничаем с надежными партнерами, лидерами на рынке
+                туристических услуг. Подбираем лучшие предложения для наших
+                клиентов.
+              </p>
+            </li>
+            <li class="col-lg-4 features-slider__item">
+              <i class="fas fa-headset features-slider__icon"></i>
+              <h3 class="features-slider__title">поддержка клиентов</h3>
+              <p class="features-slider__text">
+                Поддержка клиентов 24/7. Остаемся на связи круглосуточно,
+                сопровождаем вас в течение всей поездки. Клиенты — наша главная
+                ценность.
+              </p>
+            </li>
+            <li class="col-lg-4 features-slider__item">
+              <i class="far fa-life-ring features-slider__icon"></i>
+              <h3 class="features-slider__title">Оформление страховки</h3>
+              <p class="features-slider__text">
+                Оформляем страховку от невыезда по запросу клиента. Мы рядом,
+                где бы вы ни находились. Офисы компании всегда открыты для Вас.
+              </p>
+            </li>
+            <li class="col-lg-4 features-slider__item">
+              <i class="fas fa-umbrella-beach features-slider__icon"></i>
+              <h3 class="features-slider__title">выгодные предложения</h3>
+              <p class="features-slider__text">
+                Предлагаем отличные варианты для молодежного и семейного отдыха.
+                У нас постоянно пополняемая база отелей на разный вкус и бюджет.
+              </p>
+            </li>
+            <li class="col-lg-4 features-slider__item">
+              <i class="fas fa-tags features-slider__icon"></i>
+              <h3 class="features-slider__title">специальные программы</h3>
+              <p class="features-slider__text">
+                Большой выбор пакетных туров, а также горящих путевок по
+                привлекательным ценам в соответствии с вашими пожеланиями.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#features.features -->
+
+      <section id="tour" class="tour">
+        <div class="container-fluid">
+          <div class="banner">
+            <h2 class="tour-title banner__title mb-2">Отдых за рубежом</h2>
+            <h3 class="tour-text banner__text">
+              увлекательно и выгодно
+            </h3>
+          </div>
+
+          <div class="row m-0 tour-gallery">
+            <a
+              href="img/tour/tour-01.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-01.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-02.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-02.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-03.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-03.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-04.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-04.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-05.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-05.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-06.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-06.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-07.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-07.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+            <a
+              href="img/tour/tour-08.jpg"
+              class="col-md-3 col-sm-6 d-block p-0 tour-gallery__item"
+            >
+              <img
+                src="img/tour/tour-08.jpg"
+                alt=""
+                class="tour-gallery__img"
+              />
+            </a>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /#tour.tour -->
+
+      <section id="team" class="team">
+        <div class="container">
+          <div class="banner">
+            <h2 class="banner__title mb-2">Наша команда</h2>
+            <p class="banner__descrip banner__descrip--point px-4">
+              Наши сотрудники опытные специалисты в сфере туристических услуг.
+              Каждый из нас в любой момент готов ответить на все Ваши
+              вопросы<span class="banner__descrip--hide"
+                >, дать полезные рекомендации и грамотный совет в сложившейся
+                ситуации, а также помочь с подбором и бронированием тура!</span
+              >
+            </p>
+          </div>
+          <!-- /.banner -->
+
+          <div class="row m-0">
+            <div class="col-md-4 team-card">
+              <div class="team-card__wrapper p-3">
+                <div class="team-card__frame">
+                  <img
+                    src="img/team/team-02.jpg"
+                    alt=""
+                    class="team-card__photo"
+                  />
+                  <div class="team-card__social">
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="team-card__info">
+                  <h3 class="team-card__worker">Росс Геллер</h3>
+                  <p class="team-card__pos">Менеджер</p>
+                </div>
+                <ul class="team-card__skills">
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Аудит</span>
+                      <span class="team-card__marks--perc">90%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:90%"
+                      ></span>
+                    </p>
+                  </li>
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name"
+                        >Самоорганизация</span
+                      >
+                      <span class="team-card__marks--perc">85%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:85%"
+                      ></span>
+                    </p>
+                  </li>
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Туризм</span>
+                      <span class="team-card__marks--perc">93%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:93%"
+                      ></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.team-card-01 -->
+
+            <div class="col-md-4 team-card">
+              <div class="team-card__wrapper p-3">
+                <div class="team-card__frame">
+                  <img
+                    src="img/team/team-01.jpg"
+                    alt=""
+                    class="team-card__photo"
+                  />
+                  <div class="team-card__social">
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="team-card__info">
+                  <h3 class="team-card__worker">Чендлер Бинг</h3>
+                  <p class="team-card__pos">Директор</p>
+                </div>
+                <ul class="team-card__skills">
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Аналитика</span>
+                      <span class="team-card__marks--perc">87%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:87%"
+                      ></span>
+                    </p>
+                  </li>
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Управление</span>
+                      <span class="team-card__marks--perc">97%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:97%"
+                      ></span>
+                    </p>
+                  </li>
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Туризм</span>
+                      <span class="team-card__marks--perc">91%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:91%"
+                      ></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.team-card-02 -->
+
+            <div class="col-md-4 team-card">
+              <div class="team-card__wrapper p-3">
+                <div class="team-card__frame">
+                  <img
+                    src="img/team/team-03.jpg"
+                    alt=""
+                    class="team-card__photo"
+                  />
+
+                  <div class="team-card__social">
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="#" class="team-card__link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="team-card__info">
+                  <h3 class="team-card__worker">Рэйчел Грин</h3>
+                  <p class="team-card__pos">Бухгалтер</p>
+                </div>
+                <ul class="team-card__skills">
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Аналитика</span>
+                      <span class="team-card__marks--perc">95%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:95%"
+                      ></span>
+                    </p>
+                  </li>
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Менеджмент</span>
+                      <span class="team-card__marks--perc">88%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:88%"
+                      ></span>
+                    </p>
+                  </li>
+                  <li class="team-card__skill">
+                    <p class="team-card__marks">
+                      <span class="team-card__marks--name">Туризм</span>
+                      <span class="team-card__marks--perc">85%</span>
+                    </p>
+                    <p class="team-card__line">
+                      <span
+                        class="team-card__line--bg"
+                        style="width:85%"
+                      ></span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.team-card-03 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /#team.team -->
+
+      <section id="service" class="service">
+        <div class="container">
+          <div class="banner">
+            <h2 class="banner__title banner__title--mini mb-2">
+              Мобильное приложение
+            </h2>
+            <p class="banner__descrip px-4">
+              В приложении есть возможность подбирать туры на ближайшие даты,
+              ориентируясь на цены и подсказки календаря туров
+            </p>
+          </div>
+          <!-- /.banner -->
+
+          <ul class="row d-flex flex-wrap justify-content-center m-0">
+            <li class="btn">
+              <i class="fab fa-apple btn__icon"></i>
+              <p class="btn__text">
+                <span class="btn__text--sm">Cкачать из</span>
+                <span class="btn__text--md">Apple Store</span>
+              </p>
+            </li>
+            <li class="btn">
+              <i class="fab fa-google-play btn__icon btn__icon--sm"></i>
+              <p class="btn__text">
+                <span class="btn__text--sm">Cкачать из</span>
+                <span class="btn__text--md">Google Play</span>
+              </p>
+            </li>
+          </ul>
+          <!-- /.row -->
+        </div>
+
+        <!-- /.container -->
+      </section>
+      <!-- /#service.service -->
+
+      <section id="countries" class="countries">
+        <div class="container-fluid">
+          <div class="banner">
+            <h2 class="banner__title mb-2">Горящие туры</h2>
+            <p class="countries-descrip banner__descrip px-4">
+              Благодаря уникальной системе сбора информации по всем
+              туроператорам, мы получаем самые свежие данные и лучшие
+              предложения на данный момент.
+            </p>
+          </div>
+          <!-- /.banner -->
+
+          <div class="row m-0">
+            <div class="col-lg-6">
+              <div class="row countries-posts">
+                <div
+                  class="col-lg-12 col-sm-4 countries-post countries-post--lg p-0 "
+                >
+                  <img
+                    src="img/tour/tour-11.jpg"
+                    class="countries-post__img"
+                    alt=""
+                  />
+                  <div class="countries-post__content">
+                    <p class="countries-post__name">
+                      <img
+                        src="img/flags/flag-01.png"
+                        alt=""
+                        class="countries-post__flag"
+                      />
+                      <span class="countries-post__name--size">Египет</span>
+                    </p>
+                    <p class="countries-post__price">Цены от 767$</p>
+                    <a href="#" class="countries-post__btn">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-6 col-sm-4 countries-post countries-post--sm p-0"
+                >
+                  <img
+                    src="img/tour/tour-09.jpg"
+                    class="countries-post__img"
+                    alt=""
+                  />
+                  <div class="countries-post__content">
+                    <p class="countries-post__name">
+                      <img
+                        src="img/flags/flag-02.png"
+                        alt=""
+                        class="countries-post__flag"
+                      />
+                      <span class="countries-post__name--size">Италия</span>
+                    </p>
+                    <p class="countries-post__price">Цены от 787$</p>
+                    <a href="#" class="countries-post__btn">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-6 col-sm-4 countries-post countries-post--sm p-0"
+                >
+                  <img
+                    src="img/tour/tour-05.jpg"
+                    class="countries-post__img"
+                    alt=""
+                  />
+                  <div class="countries-post__content">
+                    <p class="countries-post__name">
+                      <img
+                        src="img/flags/flag-03.png"
+                        alt=""
+                        class="countries-post__flag"
+                      />
+                      <span class="countries-post__name--size">Китай</span>
+                    </p>
+                    <p class="countries-post__price">Цены от 755$</p>
+                    <a href="#" class="countries-post__btn">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row countries-posts">
+                <div
+                  class="col-lg-6 col-sm-4 countries-post countries-post--sm p-0"
+                >
+                  <img
+                    src="img/tour/tour-13.jpg"
+                    class="countries-post__img"
+                    alt=""
+                  />
+                  <div class="countries-post__content">
+                    <p class="countries-post__name">
+                      <img
+                        src="img/flags/flag-04.png"
+                        alt=""
+                        class="countries-post__flag"
+                      />
+                      <span class="countries-post__name--size">Греция</span>
+                    </p>
+                    <p class="countries-post__price">Цены от 747$</p>
+                    <a href="#" class="countries-post__btn">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-6 col-sm-4 countries-post countries-post--sm p-0"
+                >
+                  <img
+                    src="img/tour/tour-12.jpg"
+                    class="countries-post__img"
+                    alt=""
+                  />
+                  <div class="countries-post__content">
+                    <p class="countries-post__name">
+                      <img
+                        src="img/flags/flag-05.png"
+                        alt=""
+                        class="countries-post__flag"
+                      />
+                      <span class="countries-post__name--size">Индия</span>
+                    </p>
+                    <p class="countries-post__price">Цены от 726$</p>
+                    <a href="#" class="countries-post__btn">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-12 col-sm-4 countries-post countries-post--lg p-0"
+                >
+                  <img
+                    src="img/tour/tour-10.jpg"
+                    class="countries-post__img"
+                    alt=""
+                  />
+                  <div class="countries-post__content">
+                    <p class="countries-post__name">
+                      <img
+                        src="img/flags/flag-06.png"
+                        alt=""
+                        class="countries-post__flag"
+                      />
+                      <span class="countries-post__name--size">США</span>
+                    </p>
+                    <p class="countries-post__price">Цены от 799$</p>
+                    <a href="#" class="countries-post__btn">
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /#countries.countries -->
+
+      <section id="blog" class="blog">
+        <div class="container">
+          <div class="banner">
+            <h2 class="banner__title mb-2">Идеи для путешествий</h2>
+          </div>
+
+          <div class="row m-0 blog-list">
+            <div class="col-lg-3 col-md-4 col-sm-6 blog-list__item my-2">
+              <div class="blog-list__wrapper">
+                <img src="img/tour/tour-11.jpg" alt="" class="blog-list__img" />
+                <div class="blog-list__info">
+                  <h3 class="blog-list__title">Чудеса Египта</h3>
+                  <p class="blog-list__text">
+                    Египет был и остается одним из ведущих туристических
+                    направлений. Причин такой популярности много — теплое море,
+                    коралловые рифы, уютные отели с питанием «‎все включено».
+                  </p>
+                  <a href="#" class="blog-list__link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 blog-list__item my-2">
+              <div class="blog-list__wrapper">
+                <img src="img/tour/tour-14.jpg" alt="" class="blog-list__img" />
+                <div class="blog-list__info">
+                  <h3 class="blog-list__title">Лучшие аквапарки</h3>
+                  <p class="blog-list__text">
+                    Обустройство сквера с водными развлечениями продумано так,
+                    что выбрать аттракцион по душе смогут поклонники. Здесь
+                    работают двадцать семь горок разных уровней.
+                  </p>
+                  <a href="#" class="blog-list__link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 blog-list__item my-2">
+              <div class="blog-list__wrapper">
+                <img src="img/tour/tour-15.jpg" alt="" class="blog-list__img" />
+                <div class="blog-list__info">
+                  <h3 class="blog-list__title">Национальная кухня</h3>
+                  <p class="blog-list__text">
+                    Посещая разные страны, необходимо пробовать и национальные
+                    блюда этих стран. Это позволит тебе всецело окунуться в
+                    культуру страны и привезти домой несколько рецептов.
+                  </p>
+                  <a href="#" class="blog-list__link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 blog-list__item my-2">
+              <div class="blog-list__wrapper">
+                <img src="img/tour/tour-16.jpg" alt="" class="blog-list__img" />
+                <div class="blog-list__info">
+                  <h3 class="blog-list__title">Северное сияние</h3>
+                  <p class="blog-list__text">
+                    В ограниченном участке атмосферы сияния могут быть вызваны
+                    низкоэнергичными заряженными частицами солнечного ветра,
+                    попадающими в ионосферу.
+                  </p>
+                  <a href="#" class="blog-list__link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 blog-list__item my-2">
+              <div class="blog-list__wrapper">
+                <img src="img/tour/tour-17.jpg" alt="" class="blog-list__img" />
+                <div class="blog-list__info">
+                  <h3 class="blog-list__title">Идеальный маршрут</h3>
+                  <p class="blog-list__text">
+                    Архитектура, искусство, музеи, традиционные развлечения,
+                    гастрономия, теплое Средиземное море, хорошие пляжи особо
+                    притягательны для путешественников.
+                  </p>
+                  <a href="#" class="blog-list__link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 blog-list__item my-2">
+              <div class="blog-list__wrapper">
+                <img src="img/tour/tour-07.jpg" alt="" class="blog-list__img" />
+                <div class="blog-list__info">
+                  <h3 class="blog-list__title">Первый раз</h3>
+                  <p class="blog-list__text">
+                    Одни из самых популярных направлений для дебютных поездок за
+                    границу. Стоимость перелетов не заоблачная, с биометрическим
+                    паспортом не нужна виза.
+                  </p>
+                  <a href="#" class="blog-list__link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#blog.blog -->
+
+      <section id="count" class="count">
+        <div class="container">
+          <div class="row m-0 count-list">
+            <div class="col-sm-3 col-6 count-list__item">
+              <i class="fas fa-users count-list__icon"></i>
+              <p class="count-list__number">375</p>
+              <p class="count-list__text">+ клиентов</p>
+            </div>
+            <div class="col-sm-3 col-6 count-list__item">
+              <i class="fas fa-map-signs count-list__icon"></i>
+              <p class="count-list__number">128</p>
+              <p class="count-list__text">+ направлений</p>
+            </div>
+            <div class="col-sm-3 col-6 count-list__item">
+              <i class="fas fa-award count-list__icon"></i>
+              <p class="count-list__number">105</p>
+              <p class="count-list__text">+ наград</p>
+            </div>
+            <div class="col-sm-3 col-6 count-list__item">
+              <i class="fas fa-video count-list__icon"></i>
+              <p class="count-list__number">117</p>
+              <p class="count-list__text">+ видео</p>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#count.count -->
+
+      <section id="client" class="client">
+        <div class="container">
+          <div class="banner">
+            <h2 class="banner__title banner__title--mini mb-2">
+              Наши партнёры
+            </h2>
+            <p class="banner__descrip px-4">
+              Мы сотрудничаем только с проверенными и надежными партнерами,
+              поэтому Вы можете не переживать за качество приобретаемых услуг.
+            </p>
+          </div>
+          <!-- /.banner -->
+
+          <ul class="row client-list d-flex justify-content-center m-0">
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-01.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-02.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-03.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-04.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-05.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-01.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-02.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-03.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-04.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+            <li class="col-md-2 client-list__item">
+              <img
+                src="img/clients/client-05.png"
+                alt=""
+                class="client-list__img"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /#client.client -->
+    </main>
+    <!-- /.main -->
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-6 footer-info">
+            <h2 class="footer-title mb-3">
+              Traveller
+            </h2>
+            <p class="footer-info__text mb-4">
+              Высокотехнологичное турагентство, готовое помочь Вам с выбором и
+              оформлением путешествия на любой вкус и уровень дохода.
+            </p>
+
+            <p class="footer-info__text footer-info__text--bold">
+              Наши координаты:
+            </p>
+            <p class="footer-info__text">ул. Лейтенанта Шмидта 14</p>
+            <p class="footer-info__text mb-4">Алматы, Инд. 050060</p>
+
+            <p class="footer-info__text d-flex align-items-center">
+              <span class="footer-info__text--size">Телефон:</span>
+              <span>8 (727) 123 45 67</span>
+            </p>
+            <p class="footer-info__text d-flex align-items-center mb-4">
+              <span class="footer-info__text--size">E-mail:</span>
+              <span>info@traveller.com</span>
+            </p>
+
+            <ul class="footer-info__social d-flex">
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">
+                  <i class="fab fa-telegram-plane"></i>
+                </a>
+              </li>
+              <li class="footer-info__item">
+                <a href="#" class="footer-info__link">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-info -->
+
+          <div class="col-md-6 footer-contact">
+            <h2 class="footer-title mb-3">
+              Контакты
+            </h2>
+            <form class="footer-contact__form">
+              <div class="footer-contact__group">
+                <input
+                  type="text"
+                  class="footer-contact__input footer-contact__input--name"
+                  placeholder="Имя"
+                  required
+                />
+              </div>
+              <div class="footer-contact__group">
+                <input
+                  type="email"
+                  class="footer-contact__input footer-contact__input--email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+              <div class="footer-contact__group">
+                <textarea
+                  name=""
+                  class="footer-contact__input footer-contact__input--mess"
+                  placeholder="Сообщение"
+                  required
+                ></textarea>
+              </div>
+              <div class="footer-contact__group">
+                <input
+                  type="submit"
+                  value="Отправить"
+                  class="footer-contact__input footer-contact__input--btn"
+                />
+              </div>
+            </form>
+          </div>
+          <!-- /.footer-contact -->
+
+          <div class="col-md-12 footer-copy">
+            <p>&copy;2019. All Rights Reserved</p>
+            <p>
+              This template developed by
+              <a
+                href="https://kibo13.github.io/"
+                class="footer-copy__link"
+                target="_blank"
+                >Boris Kim</a
+              >
+            </p>
+          </div>
+          <!-- /.col-md-12 footer-copy -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    
+    <script src="js/script.min.js"></script>
+    <!-- /.custom-javascript -->
+
+  </body>
+
+</html>

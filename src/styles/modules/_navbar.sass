@@ -1,0 +1,222 @@
+// navbar 
+.navbar 
+  position: fixed
+  top: 0
+  left: 0
+  
+  width: 100%
+  height: $navbarHeight
+
+  display: flex
+  align-items: center
+
+  background: #ffffff
+  box-shadow: 0 0 1px
+  transition: .3s
+
+  z-index: 10
+
+  /* ======================================== START navbar-logo */
+  &-logo 
+    display: flex
+    justify-content: center
+    align-items: center
+
+    // logo link 
+    &__link 
+      position: relative
+
+      text-transform: uppercase
+      font-size: 1.3em
+      font-weight: bold
+      letter-spacing: 2px
+      color: $dark-color
+
+      &::after
+        content: '•'
+        position: absolute
+        bottom: -5px
+        color: $link-color
+        
+  /* ======================================== END navbar-logo */
+  
+  /* ======================================== START navbar-menu */
+  &-menu 
+    display: flex
+    align-items: center
+
+    // left-part of navbar-menu 
+    &:first-child
+     justify-content: flex-end 
+
+    // right-part of navbar-menu 
+    &:last-child
+      justify-content: flex-start
+
+    // menu link 
+    &__link 
+      padding: 0 20px
+      text-transform: uppercase
+      color: $dark-color
+      transition: .3s
+
+      &:hover 
+        color: $link-color
+
+  /* ======================================== END navbar-menu */
+
+  /* ======================================== START navbar-burger */
+  &-burger
+    position: absolute
+    top: 15px
+    right: 15px
+
+    display: none
+    justify-content: center
+    align-items: center
+
+    height: 30px
+    width: 35px
+
+    cursor: pointer
+
+    &:hover
+      .navbar-burger__icon
+        &::before,
+        &::after
+          left: 0
+          width: 100%
+
+    &__icon 
+      position: relative
+      width: 90%
+      height: 2px
+      background: $dark-color
+
+      &::after,
+      &::before
+        content: ''
+        position: absolute
+        left: 15%
+        width: 70%
+        height: 2px
+        background: $dark-color
+        transition: .3s
+
+      &::after
+        top: 8px
+      &::before
+        top: -8px
+      
+    .toggler
+      background: transparent
+
+      &::after,
+      &::before
+        position: absolute
+        top: 0
+
+      &::after
+        transform: rotate(45deg)
+      &::before
+        transform: rotate(-45deg)
+
+  /* ======================================== END navbar-burger */
+
+  /* ======================================== START navbar-social */
+  &-social 
+    display: none
+  /* ======================================== END navbar-social */
+
+// media 
+@media (max-width: $laptopWidth)
+  .navbar 
+
+    // navbar-logo 
+    &-logo 
+      position: absolute
+      top: 15px
+      left: 15px
+
+      display: flex
+      justify-content: flex-start
+
+    // navbar-menu
+    &-menu
+      display: none
+    
+    // navbar-burger 
+    &-burger 
+      display: flex
+  
+  // mobile version 
+  .mobile 
+    height: 100%
+    background: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%)
+
+    // navbar-menu 
+    .navbar-menu
+      flex-basis: 50%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      &:first-child
+        align-items: flex-end
+
+      &__link
+        position: relative
+        margin: 5px
+        padding: 10px 40px
+        width: 240px
+        background: #ffffff
+        transition: .3s
+
+        &:hover
+          color: #ffffff
+          background: $link-color
+
+          &::before
+            color: #ffffff
+
+        &::before
+          content: attr(data-number)
+          position: absolute
+          top: 50%
+          left: 18px
+          transform: translateY(-50%)
+          color: $light-color
+          transition: .3s
+
+    // navbar-social 
+    .navbar-social 
+      margin-top: 50px
+      display: flex
+      justify-content: center
+
+      &__item 
+        margin: 0 7px
+        width: 36px
+        height: 36px
+     
+      &__link 
+        display: flex
+        justify-content: center
+        align-items: center
+
+        width: 100%
+        height: 100%
+
+        border-radius: 50%
+        color: #ffffff
+        border: 3px solid #ffffff
+        transition: .3s
+
+        &:hover 
+          color: $link-color
+          border: 3px solid $link-color
+
+@media (max-width: $mobileWidth)
+  .mobile 
+    .navbar-social 
+      margin-top: 20px

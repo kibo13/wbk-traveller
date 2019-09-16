@@ -1,0 +1,39 @@
+// blog 
+.blog 
+  &-list
+    &__wrapper 
+      padding-bottom: 10px
+      box-shadow: 0 0 2px
+    
+    &__img 
+      display: block
+      width: 100%
+      object-fit: cover
+    
+    &__info 
+      padding: 0 15px
+    
+    &__title 
+      position: relative
+      margin: 15px 0
+
+      &::after
+        content: ''
+        position: absolute
+        bottom: -8px
+        left: 0
+        width: 20%
+        height: 2px
+        background: rgba($dark-color, .7)
+    
+    &__text
+      font-size: 0.9em
+    
+    &__link 
+      margin-top: 30px
+      display: block
+      color: $danger-color
+      transition: .3s
+
+      &:hover 
+        color: $dark-color

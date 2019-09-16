@@ -1,0 +1,49 @@
+// count
+.count 
+  padding: 50px 0
+
+  background-image: url('../img/count/count-bg.jpg')
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  color: #ffffff
+
+  &-list 
+    &__item 
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      text-transform: uppercase
+    
+    &__icon 
+      font-size: 2.5em
+
+    &__number 
+      margin-top: 25px
+      font-size: 3em
+      font-family: $oswald-font
+      font-weight: bold
+      opacity: 0
+      transition: .5s
+    
+// media 
+@media (max-width: $tabletWidth)
+  .count 
+    &-list 
+      &__icon,
+      &__number
+        font-size: 2em
+      &__text
+        font-size: 0.85em
+
+// media 
+@media (max-width: $mobileWidth)
+  .count 
+    &-list
+      &__item 
+        margin-bottom: 30px
+      &__number
+        margin-top: 15px

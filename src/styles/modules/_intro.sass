@@ -1,0 +1,162 @@
+// intro 
+.intro 
+	position: relative
+
+	display: flex
+	justify-content: center
+	align-items: center
+
+	user-select: none
+
+	/* ======================================== START intro-slider */
+	&-slider 
+		position: relative
+		display: flex
+		width: 100%
+		height: 100vh
+
+		// light gradient 
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+
+			background: rgba($default-color, .3)
+
+		&__item 
+			display: none
+			width: 100%
+
+			&--fade 
+				animation-name: fade
+				animation-duration: 1.5s
+
+		&__img 
+			width: 100%
+			object-fit: cover
+
+	/* ======================================== END intro-slider */
+
+	/* ======================================== START intro-info */
+	.container
+		position: absolute
+		top: $navbarHeight
+		bottom: 0
+	
+	.row 
+		height: 100%
+	
+	&-info 
+		color: $default-color
+
+		// title 
+		&__title 
+			text-transform: uppercase
+			font-family: $oswald-font
+			font-size: 3.5em
+		
+		&__text
+			margin-top: 5px
+			max-width: 550px	
+
+		// button 
+		&__btn 
+			position: relative
+			margin: 15px 0 20px
+			padding: 10px 15px
+
+			width: 120px
+
+			text-align: center
+			text-transform: uppercase
+			font-size: .95em
+			color: $dark-color
+
+			background: #ffffff
+			border-radius: 30px
+			transition: .3s
+
+			&:hover 
+				color: #ffffff
+				background: $dark-color
+
+			&--pulse
+				animation: pulse 2.5s linear infinite
+		
+		// dots  
+		&__group 
+			display: flex
+		
+		// dot 
+		&__dot 
+			margin: 0 5px
+
+			width: 16px
+			height: 16px
+
+			background: #ffffff
+			transition: .3s
+			cursor: pointer
+
+			&:hover 
+				background: $dark-color
+		
+		// state dot 
+		.active 
+			background: $dark-color
+
+	/* ======================================== END intro-info */
+
+	/* ======================================== START intro-social */
+	&-social 
+		&__item
+			margin: 7px
+			box-shadow: 0 0 1px
+			
+		&__link
+			display: flex
+			justify-content: center
+			align-items: center
+
+			width: 36px
+			height: 36px
+			
+			color: $dark-color
+			background: #ffffff
+			transition: .3s
+
+			&:hover
+				color: #ffffff
+				background: $dark-color
+
+	/* ======================================== END intro-info */
+
+// animations 
+@keyframes fade
+	from 
+		opacity: .4
+	to 
+		opacity: 1
+
+@keyframes pulse
+	0% 
+		box-shadow: 0 0 1px rgba($dark-color, .4)
+	50% 
+		box-shadow: 0 0 1px 8px rgba($dark-color, .2)
+	100%
+		box-shadow: 0 0 1px 10px transparent
+
+// media 
+@media (max-width: $tabletWidth)
+	.intro
+		&-social 
+			display: none !important
+
+@media (max-width: $mobileWidth)
+	.intro 
+		&-info 
+			&__title 
+				font-size: 2.2em

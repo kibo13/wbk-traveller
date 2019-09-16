@@ -1,0 +1,36 @@
+// service 
+.service 
+  position: relative
+  padding: 50px 0
+
+  background-image: url('../img/service/service-bg.jpg')
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  color: #ffffff
+  z-index: 0
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+
+    background: rgba($dark-color, .35)
+
+  .container
+    position: relative
+    text-align: center
+    user-select: none
+    z-index: 1
+   
+  .banner 
+    margin-bottom: 30px
+
+    &__descrip 
+      margin: 0 auto
+      max-width: 600px
